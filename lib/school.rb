@@ -3,14 +3,14 @@ class School
   def initialize(name)
     @name = name
     @roster = {}
-  end 
+  end
   def add_student(student, level)
     roster[level] ||= []
     roster[level] << student
-  end 
+  end
   def grade(level)
-    roster.detect do |x, y| 
+    roster.detect do |x, y|
       if x == level
-        return y 
-      end 
+        return y
+      end
     end 
